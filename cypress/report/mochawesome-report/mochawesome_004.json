@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-23T19:26:53.528Z",
+    "end": "2021-11-23T19:27:08.033Z",
+    "duration": 14505,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a2a080b0-5e76-4fe3-a2c2-8675335c1337",
+      "title": "",
+      "fullFile": "cypress/integration/specs/dashbord.js",
+      "file": "cypress/integration/specs/dashbord.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ee9e104a-9ecf-4694-945f-c7736dc40462",
+          "title": "Dashboard Test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Product List Summary tabs",
+              "fullTitle": "Dashboard Test suite Product List Summary tabs",
+              "timedOut": null,
+              "duration": 6551,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "locator.sideScroll().scrollTo('bottom');\nlocator.productList().contains('Product List');\nlocator.summaryButton().click().contains('Summary');",
+              "err": {},
+              "uuid": "b01a2255-a114-47bd-8a25-6bcd1c9321ff",
+              "parentUUID": "ee9e104a-9ecf-4694-945f-c7736dc40462",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Product List unit economics tabs",
+              "fullTitle": "Dashboard Test suite Product List unit economics tabs",
+              "timedOut": null,
+              "duration": 6006,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "locator.sideScroll().scrollTo('bottom');\nlocator.unitEconomics().click();\nlocator.adSpend().contains('Ad Spend ($)');",
+              "err": {},
+              "uuid": "b3dd01b9-dc5a-40e9-87c9-2e77aa532618",
+              "parentUUID": "ee9e104a-9ecf-4694-945f-c7736dc40462",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b01a2255-a114-47bd-8a25-6bcd1c9321ff",
+            "b3dd01b9-dc5a-40e9-87c9-2e77aa532618"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12557,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.0.1"
+    }
+  }
+}

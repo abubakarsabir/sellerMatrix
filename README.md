@@ -8,7 +8,7 @@
 ## Installation
 Firstly Clone this Project 
 
-    git clone ----------------------------------
+    git clone https://github.com/abubakarsabir/sellerMatrix.git
     cd sellerMetrix
 
 ## Run command to execute tests headed

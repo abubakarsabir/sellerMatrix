@@ -3,7 +3,7 @@ const locator= new dashboardPage();
 beforeEach(() => {
   cy.login()
 });
-describe('Dashboard Test suite',()=>{
+describe('Dashboard Test verification',()=>{
   it('Product List Summary tabs',()=>{
     locator.sideScroll().scrollTo('bottom')
     locator.productList()
@@ -12,7 +12,7 @@ describe('Dashboard Test suite',()=>{
       .contains('Summary')
   })
 
-  it('Product List unit economics tabs',()=>{
+  it('Product List unit economics verification',()=>{
     locator.sideScroll().scrollTo('bottom')
     locator.unitEconomics().click()
     locator.adSpend().contains('Ad Spend ($)')

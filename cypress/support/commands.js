@@ -33,3 +33,9 @@ Cypress.Commands.add('login', () => {
     .get('p[class="hidden xs:inline-block"]').contains('Dashboard')
     .should('have.text','Dashboard')
 });
+
+Cypress.Commands.add('forceVisit', url => {
+    cy.window().then(win => {
+        return win.open(url, '_self'); 
+      });
+});

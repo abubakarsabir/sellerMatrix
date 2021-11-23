@@ -10,7 +10,9 @@ Firstly Clone this Project
 
     git clone https://github.com/abubakarsabir/sellerMatrix.git
     cd sellerMetrix
+## Opening the Cypress dashboard 
 
+    npx cypress open
 ## Run command to execute tests headed
    
     npx cypress open 

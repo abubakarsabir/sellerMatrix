@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-11-23T17:47:57.998Z",
+    "end": "2021-11-23T17:48:09.904Z",
+    "duration": 11906,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "17039770-783d-4385-93ff-40701ba9534d",
+      "title": "",
+      "fullFile": "cypress/integration/specs/dashbord.js",
+      "file": "cypress/integration/specs/dashbord.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b575e7ca-b0db-4cee-a3b8-0d25e3b9c0cb",
+          "title": "Dashboard Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Testing the link",
+              "fullTitle": "Dashboard Test Suite Testing the link",
+              "timedOut": null,
+              "duration": 8865,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const pages = ['Dashboard'];\npages.forEach(page => {\n  cy.contains(page).then(link => {\n    cy.request(link.prop('href'));\n  });\n});",
+              "err": {
+                "message": "CypressError: `cy.request()` requires a `url`. You did not provide a `url`.\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` requires a `url`. You did not provide a `url`.\n\nhttps://on.cypress.io/request\n    at Context.request (http://54.218.163.142/__cypress/runner/cypress_runner.js:159171:78)\nFrom Your Spec Code:\n    at Context.eval (http://54.218.163.142/__cypress/tests?p=cypress/integration/specs/dashbord.js:107:12)",
+                "diff": null
+              },
+              "uuid": "5fd82a3f-63e6-49bb-b6b5-2a613b63902c",
+              "parentUUID": "b575e7ca-b0db-4cee-a3b8-0d25e3b9c0cb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5fd82a3f-63e6-49bb-b6b5-2a613b63902c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8865,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.0.1"
+    }
+  }
+}
